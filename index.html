@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Report Advisor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navigation">
+        <input type="checkbox" id="check" />
+        <label for="check" class="check_btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"
+          >Student <span class="logo2">Report</span> Advisor</label
+        >
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Student</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><button class="btnLogin-popup">Login</button></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="cover_box">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" required />
+            <label for="">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label for="">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forgot password</a>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <!--Registration-->
+      <div class="form-box register">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="input-container">
+            <div class="input-box input-box1">
+              <span class="icon1"
+                ><ion-icon name="person-outline"></ion-icon
+              ></span>
+              <input type="text" required />
+              <label>Full name</label>
+            </div>
+            <div class="input-box input-box1">
+              <span class="icon1"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></span>
+              <input type="email" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box input-box1">
+              <span class="icon1"
+                ><ion-icon name="call-outline"></ion-icon
+              ></span>
+              <input type="number" required />
+              <label>Phone Number</label>
+            </div>
+            <div class="input-box input-box1">
+              <span class="icon1"
+                ><ion-icon name="location-outline"></ion-icon
+              ></span>
+              <input type="text" required />
+              <label>State</label>
+            </div>
+            <div class="input-box input-box1">
+              <span class="icon1"
+                ><ion-icon name="location-outline"></ion-icon
+              ></span>
+              <input type="text" required />
+              <label>City</label>
+            </div>
+            <div class="input-box input-box1 input-color">
+              <span class="icon1"
+                ><ion-icon name="book-outline"></ion-icon
+              ></span>
+              <select required>
+                <option value="" disabled selected>Select Program</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="BBA">BBA</option>
+                <option value="MBA">MBA</option>
+              </select>
+            </div>
+            <div class="input-box input-box1 input-color">
+              <span class="icon1"
+                ><ion-icon name="male-female-outline"></ion-icon
+              ></span>
+              <select required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="remember-forgot">
+            <label class="terms"
+              ><input type="checkbox" />Agree to terms & conditions</label
+            >
+          </div>
+          <button type="submit" class="btn btn-success">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account? <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
